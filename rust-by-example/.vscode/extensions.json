@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    // "ms-vscode.vscode-typescript-tslint-plugin",
+    // "dbaeumer.vscode-eslint",
+    // "msjsdiag.debugger-for-chrome",
+    // "esbenp.prettier-vscode",
+    "rust-lang.rust",
+    "EditorConfig.EditorConfig",
+    "CoenraadS.bracket-pair-colorizer-2",
+    "oderwat.indent-rainbow",
+  ]
+}
