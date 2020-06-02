@@ -1,5 +1,7 @@
 [workspace]
 
 members = [
-  "06-conversion"
+  "06-conversion",
+  "07-statement",
+  "08-flow_control"
 ]
