@@ -3,5 +3,6 @@
 members = [
   "06-conversion",
   "07-statement",
-  "08-flow_control"
+  "08-flow_control",
+  "09-function"
 ]
