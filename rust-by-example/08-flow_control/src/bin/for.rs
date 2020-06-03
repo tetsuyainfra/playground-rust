@@ -69,7 +69,7 @@ fn iter_test() {
         print_typename("&format!()", &format!("{}", name));
         // &format!("Hello {}", name); // &strはどこかに確保された本体へのスライスなので、
         // loop中に消えるここでは定義できない・・・
-        "Hello";
+        "Hello"
       }
     }
   }
