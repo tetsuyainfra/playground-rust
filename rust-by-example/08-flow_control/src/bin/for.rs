@@ -62,8 +62,20 @@ fn iter_test() {
     // match文の返り値で上書き
     *name = match name {
       &mut "Ferris" => "There is a rustacean among us!",
-      _ => "Hello",
+      _ => {
+        print_typename("Hello", "Hello");
+        print_typename("*name", *name);
+        print_typename("format!()", format!("{}", name));
+        print_typename("&format!()", &format!("{}", name));
+        // &format!("Hello {}", name); // &strはどこかに確保された本体へのスライスなので、
+        // loop中に消えるここでは定義できない・・・
+        "Hello";
+      }
     }
   }
   println!("{:?}", names);
+}
+
+fn print_typename<T>(s: &str, _: T) {
+  println!("{}: {}", s, std::any::type_name::<T>());
 }
