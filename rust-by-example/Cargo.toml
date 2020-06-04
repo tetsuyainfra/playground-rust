@@ -7,4 +7,5 @@ members = [
   "09-function",
   "10-mods",
 #  "11-crates",
+  "12-cargo",
 ]
