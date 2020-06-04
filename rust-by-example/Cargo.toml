@@ -6,4 +6,5 @@ members = [
   "08-flow_control",
   "09-function",
   "10-mods",
+  "11-crates",
 ]
