@@ -3,7 +3,7 @@ use std::convert::From;
 fn main() {
     // 定義されてる
     let my_str = "hello";
-    let my_string = String::from(my_str);
+    let _my_string = String::from(my_str);
 
     // 定義してみる
     #[derive(Debug)]

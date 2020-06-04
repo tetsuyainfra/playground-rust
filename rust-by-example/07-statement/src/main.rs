@@ -43,9 +43,11 @@ fn main() {
     x_cube + x_squared + x
   };
 
+  #[allow(unused_must_use)]
   let z = {
     // The semicolon suppresses this expression and `()` is assigned to `z`
     // セミコロンがあるので`z`には`()`が入ります。
+    // #[allow(unused_must_use)]
     2 * x;
   };
 

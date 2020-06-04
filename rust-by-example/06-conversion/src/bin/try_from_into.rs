@@ -1,4 +1,6 @@
 use std::convert::TryFrom;
+
+#[allow(unused_imports)]
 use std::convert::TryInto;
 
 #[derive(Debug, PartialEq)]
