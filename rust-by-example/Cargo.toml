@@ -10,4 +10,5 @@ members = [
   "12-cargo",
   "13-attribute",
   "14-generics",
+  "15-scope",
 ]
