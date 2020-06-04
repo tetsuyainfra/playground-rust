@@ -42,6 +42,9 @@ fn main() {
   // 自分で追加した文
   let vec2 = vec![1, 2, 3];
   vec2.debug_in_option();
+
+  //
+  let _vtest = Vec::<f64>::new();
 }
 
 // 追加
