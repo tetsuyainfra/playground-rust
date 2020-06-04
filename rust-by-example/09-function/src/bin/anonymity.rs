@@ -1,5 +1,7 @@
+#[allow(dead_code)]
+
 // FはGeneric型でなくてはならない
-fn applyFnOnce<F>(f: F)
+fn apply_fnonce<F>(f: F)
 where
   F: FnOnce(), // FはFnOnceを実装していなくてはならない
                // Fnは引数と返りを持たない

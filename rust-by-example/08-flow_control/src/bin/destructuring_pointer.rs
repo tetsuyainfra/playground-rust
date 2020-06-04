@@ -4,7 +4,6 @@ fn main() {
   // `i32`型へのリファレンスをアサインする。
   // `&`によってリファレンス(参照)であることを明示している。
   let reference = &4; // 4 はどこかに保存されてる
-  let reference = &4; // 4 はどこかに保存されてる
 
   match reference {
     // If `reference` is pattern matched against `&val`, it results

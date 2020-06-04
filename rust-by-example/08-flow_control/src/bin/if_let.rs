@@ -90,7 +90,7 @@ fn let_like_match() {
   }
 
   // Binding also works with `if let`
-  if let Foo::Qux(value @ 100) = c {
+  if let Foo::Qux(_value @ 100) = c {
     println!("c is one hundred");
   }
 
@@ -102,6 +102,7 @@ fn let_like_match() {
   // if Foo2::Bar == a は 失敗する
   // なぜならインスタンスを同等化できないため
   // if Foo2::Bar == a {
+  #[allow(irrefutable_let_patterns)]
   if let Foo2::Bar = a {
     // ^-- this causes a compile-time error. Use `if let` instead.
     println!("a is foobar");

@@ -38,5 +38,6 @@ fn main() {
   println!("2 in array1: {}", array1.iter().any(|&x| x == 2));
   // `into_iter()` for arrays unusually yields `&i32`.
   // 配列に`into_iter()`を使うと例外的に`&i32`を`yield`する。
-  println!("2 in array2: {}", array2.into_iter().any(|&x| x == 2));
+  // println!("2 in array2: {}", array2.into_iter().any(|&x| x == 2)); // 実行できるけど・・・
+  println!("2 in array2: {}", array2.iter().any(|&x| x == 2));
 }

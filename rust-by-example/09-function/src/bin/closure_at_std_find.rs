@@ -19,7 +19,7 @@
 //   {
 //   }
 // }
-
+#[allow(dead_code)]
 fn main() {
   let vec1 = vec![1, 2, 3];
   let vec2 = vec![4, 5, 6];
@@ -50,7 +50,8 @@ fn main() {
   // 配列に`into_iter()`を使うと例外的に`&i32`を`yield`する。
   println!(
     "Find 2 in array2: {:?}",
-    array2.into_iter().find(|&&x| x == 2)
+    // array2.into_iter().find(|&&x| x == 2) // warningされる
+    array2.iter().find(|&&x| x == 2)
   );
 }
 

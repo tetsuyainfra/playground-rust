@@ -48,7 +48,7 @@ fn main() {
     }
 
     // 実験
-    let big_n = if n < 10 && n > -10 {
+    let _big_n = if n < 10 && n > -10 {
         //
         10 * n
     } else {

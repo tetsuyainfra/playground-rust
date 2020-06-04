@@ -4,6 +4,7 @@ fn main() {
   'outer: loop {
     println!("Entered the outer loop");
 
+    #[allow(unused_labels)]
     'inner: loop {
       println!("Entered the inner loop");
 
