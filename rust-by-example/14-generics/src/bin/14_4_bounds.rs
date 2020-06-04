@@ -6,9 +6,9 @@
 use std::fmt::Display;
 
 // Display Traitを実装しているTを引数として取るジェネリック関数を定義
-fn printer<T: Display>(t: T) {
-  println!("{}", t);
-}
+// fn printer<T: Display>(t: T) {
+//   println!("{}", t);
+// }
 
 // 境界はジェネリクスを全ての型ではなく一定条件を満たす型に対してのみ適用するためにある
 // <T: Display>は<T>の部分集合であると意識すれば 「境界」の言葉の意味がしっくりくる

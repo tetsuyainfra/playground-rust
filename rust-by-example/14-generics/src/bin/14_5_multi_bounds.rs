@@ -16,6 +16,7 @@ fn compare_types<T: Debug, U: Debug>(t: &T, u: &U) {
 
 // 追加
 // これだと引数が同じ型じゃないとダメになる
+#[allow(dead_code)]
 fn compare_types2<T: Debug>(t: &T, u: &T) {
   println!("t: `{:?}`", t);
   println!("u: `{:?}`", u);
