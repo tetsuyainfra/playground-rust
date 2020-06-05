@@ -50,7 +50,7 @@ impl Drop for ToDrop {
 }
 
 fn droptest() {
-    let x = ToDrop;
+    let _x = ToDrop;
     println!("Made a ToDrop");
     // ここでxがデストラクタされる
 }
