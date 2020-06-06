@@ -11,4 +11,5 @@ members = [
   "13-attribute",
   "14-generics",
   "15-scope",
+  "16-traits",
 ]
