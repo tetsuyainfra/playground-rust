@@ -8,5 +8,6 @@
     "EditorConfig.EditorConfig",
     "CoenraadS.bracket-pair-colorizer-2",
     "oderwat.indent-rainbow",
+    "bungcip.better-toml",
   ]
 }
