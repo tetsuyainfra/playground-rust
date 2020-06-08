@@ -12,4 +12,5 @@ members = [
   "14-generics",
   "15-scope",
   "16-traits",
+  "17-macros",
 ]
