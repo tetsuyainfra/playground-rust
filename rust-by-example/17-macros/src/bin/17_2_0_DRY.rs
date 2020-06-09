@@ -15,7 +15,7 @@ macro_rules! assert_equal_len {
       ($a.len(),),
       stringify!($op),
       ($b.len(),)
-    )
+    );
   };
 }
 
@@ -50,7 +50,7 @@ mod test {
 
           super::$func(&mut x, &y);
 
-          assert_eq!(x, y);
+          assert_eq!(x, z);
         }
       }
     };
