@@ -26,7 +26,7 @@ macro_rules! op {
 
       for (x, y) in xs.iter_mut().zip(ys.iter()) {
         *x = $bound::$method(*x, *y);
-        // *x = x.method(*y)
+        // *x = x.$method(*y)
       }
     }
   };
@@ -48,7 +48,7 @@ mod test {
           let y: Vec<_> = iter::repeat($y).take(size).collect();
           let z: Vec<_> = iter::repeat($z).take(size).collect();
 
-          super::$func(&mut x, $y);
+          super::$func(&mut x, &y);
 
           assert_eq!(x, y);
         }
