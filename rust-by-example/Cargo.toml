@@ -13,4 +13,5 @@ members = [
   "15-scope",
   "16-traits",
   "17-macros",
+  "18-error_handling",
 ]
