@@ -1,0 +1,8 @@
+[package]
+name = "tokio_tokio_graceful_shutdown"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = {version = "1.43.0", features = ["full"]}
+tokio-graceful-shutdown = {version = "0.16.0" }
